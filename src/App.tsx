@@ -3,7 +3,7 @@ import Result from "./Components/Result";
 
 function App() {
   return (
-    <main className="container">
+    <main>
       <Filters />
       <Result />
     </main>

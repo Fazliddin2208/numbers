@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function ButtonGroup({ value, onChange }: { value: string, onChange: (value: string) => void }) {
-  return <div className="flex space-x-6">
+  return <div className="flex flex-row justify-between sm:flex-col lg:flex-row lg:gap-6 gap-4">
     <button className={`px-2 py-1 border border-gray-300 rounded ${value === "math" ? "bg-gray-200 text-black" : ""}`} onClick={() => onChange("math")}>Random Math</button>
     <button className={`px-2 py-1 border border-gray-300 rounded ${value === "trivia" ? "bg-gray-200 text-black" : ""}`} onClick={() => onChange("trivia")}>Random Trivia</button>
     <button className={`px-2 py-1 border border-gray-300 rounded ${value === "date" ? "bg-gray-200 text-black" : ""}`} onClick={() => onChange("date")}>Random Date</button>
@@ -23,14 +23,12 @@ export default function Filters() {
     });
   };
 
-  return <div className="p-6 flex items-center justify-between">
-    <form onSubmit={handleSubmit}>
-      <div className="flex">
+  return <div className="p-6 flex sm:flex-row flex-col items-center justify-between border w-full mx-auto gap-6">
+    <form onSubmit={handleSubmit} className="w-full sm:w-auto">
         <ButtonGroup value={type} onChange={setType} />
-      </div>
     </form>
-    <div className="flex space-x-2">
-      <input type="number" className="px-2 py-1 border border-gray-300 rounded" value={number} onChange={e => setNumber(e.target.value)} />
+    <div className="flex space-x-2 sm:w-auto w-full">
+      <input type="number" className="px-2 py-1 border border-gray-300 rounded md:w-80 sm:w-60 w-full" value={number} onChange={e => setNumber(e.target.value)} />
       <button className="px-2 py-1 border border-gray-300 rounded"
         onClick={() => {
           navigate({

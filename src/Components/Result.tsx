@@ -32,7 +32,7 @@ export default function Result() {
   return (
     <div className="p-4">
       {data ? (
-        <div className="border w-1/3 mx-auto text-center space-y-6 p-4 mt-10 rounded-lg">
+        <div className="border lg:w-1/3 md:w-3/5 w-full mx-auto text-center space-y-6 p-4 mt-10 rounded-lg">
           <div className="flex justify-center">
             {data ? (
               <CountUp
@@ -41,8 +41,8 @@ export default function Result() {
                 duration={2}
                 separator=""
                 key={data?.number}
-                onStart={() => { setShowText(false), console.log("Start") }}
-                onEnd={() => { setShowText(true), console.log("End") }}
+                onStart={() => { setShowText(false) }}
+                onEnd={() => { setShowText(true) }}
               />
             ) : (
               <div className="h-[160px] w-[160px] bg-gray-300 rounded animate-pulse" />
