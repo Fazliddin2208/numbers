@@ -23,7 +23,7 @@ export default function Filters() {
     });
   };
 
-  return <div className="p-6 flex sm:flex-row flex-col items-center justify-between border w-full mx-auto gap-6">
+  return <div className="p-6 flex sm:flex-row flex-col items-center justify-between w-full mx-auto gap-6">
     <form onSubmit={handleSubmit} className="w-full sm:w-auto">
         <ButtonGroup value={type} onChange={setType} />
     </form>
