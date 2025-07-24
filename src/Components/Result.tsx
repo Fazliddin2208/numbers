@@ -61,7 +61,7 @@ export default function Result() {
         </div>
 
       ) : (
-        <div className="border w-1/3 mx-auto text-center space-y-6 p-4 mt-10">
+        <div className="border lg:w-1/3 md:w-3/5 w-full mx-auto text-center space-y-6 p-4 mt-10 rounded-lg">
           <div className="flex justify-center"><p className="text-[160px]">0</p></div>
           <p className="text-xl">0 is the atomic number of the theoretical element tetraneutron.</p>
         </div>
