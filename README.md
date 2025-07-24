@@ -1,5 +1,5 @@
-<img src="public/image/number.png" alt="Numbers" />
-<img src="public/image/trivia.png" alt="Numbers" />
-<img src="public/image/date.png" alt="Numbers" />
-<img src="public/image/year.png" alt="Numbers" />
-<img src="public/image/input.png" alt="Numbers" />
+![Preview](public/image/number.png)
+![Preview](public/image/trivia.png)
+![Preview](public/image/date.png)
+![Preview](public/image/year.png)
+![Preview](public/image/input.png)
